@@ -14,8 +14,7 @@ module "aws_iam_alias" {
 
 # create customer gateway
 module "aws_customer_gateway" {
-  # source = "github.com/ellerbrock/tf-aws-customer_gateway"
-  source = "./modules/tf-aws-customer-gw"
+  source = "github.com/ellerbrock/tf-aws-customer_gateway"
 
   cgw_bgp_asn  = "65000"
   cgw_ip       = "10.20.30.40"
