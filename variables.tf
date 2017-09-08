@@ -1,17 +1,24 @@
-variable "cgw_bgp_asn" {
+variable "bgp_asn" {
   description = "border gateway protocol autonomous system number"
-  default = 65000
+  default     = "65000"
 }
 
-variable "cgw_ip" {
+variable "ip" {
   description = "ip address"
+  default     = ""
 }
 
-variable "cgw_type" {
+variable "type" {
   description = "tag"
-  default = "ipsec.1"
+  default     = "ipsec.1"
 }
 
-variable "cgw_tag_name" {
-  description = "tag"
+variable "tags" {
+  description = "tags"
+  default     = {}
+}
+
+variable "lifecycle" {
+  description = "lifecycle"
+  default     = {}
 }
